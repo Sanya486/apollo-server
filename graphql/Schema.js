@@ -6,7 +6,7 @@ scalar Date
     model: String!
     color: String
     horsePowers: String
-    createdDate: Date!
+    createdDate: Date
   }
 
   type Query {
@@ -15,7 +15,7 @@ scalar Date
   }
 
   type Mutation {
-    createCar(brand: String!, model: String!, color: String, horsePowers: String, createdDate: Date!): Car
+    createCar(brand: String!, model: String!, color: String, horsePowers: String, createdDate: Date): Car
     updateCar(id: ID!, brand: String, model: String, color: String, horsePowers: String, createdDate: Date): Car
     deleteCar(id: ID!): Car
   }
